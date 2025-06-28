@@ -1,17 +1,13 @@
 import { Disclosure, DisclosureButton } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
-import logo from '../../../assets/logo-black.svg';
 
 import { navigation } from '../../../const';
 import { classNames } from '../../../util';
 import styles from './styles.module.css';
 import {
 	BiLogoFacebook,
-	BiLogoGmail,
 	BiLogoInstagram,
-	BiLogoLinkedin,
 	BiLogoTiktok,
 	BiSolidDashboard,
 } from 'react-icons/bi';

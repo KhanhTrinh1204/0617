@@ -115,18 +115,7 @@ const Main = () => {
 						</div>
 					</div>
 				</div>
-				{/* <MicroMarket />
-				<SmartFridge /> */}
 			</div>
-			{/* <OfficeWorks />
-			<div className="lg:px-28 py-0">
-				<OurService />
-				<OurProduct />
-				<Benefit />
-			</div>
-			<Employee />
-			<ImageIntro />
-			<FormSubmit /> */}
 		</>
 	);
 };

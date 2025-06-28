@@ -6,15 +6,11 @@ import { classNames } from '../../../util';
 import styles from './styles.module.css';
 import {
 	BiLogoFacebook,
-	BiLogoGmail,
 	BiLogoInstagram,
-	BiLogoLinkedin,
 	BiLogoTiktok,
 	BiSolidDashboard,
 } from 'react-icons/bi';
 import React, { useEffect, useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
-import logo from '../../../assets/logo-black.svg';
 
 interface IconButtonProps {
 	Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
