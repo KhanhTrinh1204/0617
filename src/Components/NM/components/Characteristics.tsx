@@ -1,4 +1,3 @@
-import { faArrowRight, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useVisibleOnScroll } from '../hooks/useVisibleOnScroll';
 
@@ -242,13 +241,6 @@ const Feature2 = () => {
 					</svg>
 				</div>
 				<div className="relative translate-x-[-14em] md:translate-x-16 -z-20">
-					<div className="relative top-32 left-[27em] z-2 rounded-full bg-[#ffffff76] size-14 -rotate-4 cursor-pointer">
-						<FontAwesomeIcon
-							icon={faPlay}
-							size="xl"
-							className="absolute top-4 left-5"
-						/>
-					</div>
 					<picture>
 						<div className="rotate-3 relative z-30">
 							<img
@@ -388,13 +380,6 @@ const Feature3 = () => {
 					</svg>
 				</div>
 				<div className="relative -translate-y-16 translate-x-[15em] md:translate-x-0 md:translate-y-0 -z-20">
-					<div className="relative top-36 left-[1em] z-2 rounded-full bg-[#ffffff76] size-14 cursor-pointer">
-						<FontAwesomeIcon
-							icon={faPlay}
-							size="xl"
-							className="absolute top-4 left-5"
-						/>
-					</div>
 					<picture>
 						<div className="rotate-90 relative z-30">
 							<img
@@ -522,13 +507,6 @@ const Feature4 = () => {
 					</svg>
 				</div>
 				<div className="relative md:translate-x-16 translate-x-[-14em] md:translate-y-0 translate-y-[-5em] -z-10">
-					<div className="relative top-20 left-[27em] z-2 rounded-full bg-[#ffffff76] size-14 -rotate-4 cursor-pointer">
-						<FontAwesomeIcon
-							icon={faPlay}
-							size="xl"
-							className="absolute top-4 left-5"
-						/>
-					</div>
 					<picture>
 						<img
 							className={`transition-opacity duration-700 absolute z-30 scale-110 md:top-32 md:right-40 top-36 right-8 w-10 ${
@@ -632,13 +610,6 @@ const Feature5 = () => {
 					</svg>
 				</div>
 				<div className="relative translate-x-[16em] md:translate-x-0 md:translate-y-0 translate-y-[-4em] -z-10">
-					<div className="relative top-40 left-6 z-2 rounded-full bg-[#ffffff76] size-14 cursor-pointer rotate-4">
-						<FontAwesomeIcon
-							icon={faPlay}
-							size="xl"
-							className="absolute top-4 left-5"
-						/>
-					</div>
 					<picture>
 						<div className="rotate-90">
 							<img
