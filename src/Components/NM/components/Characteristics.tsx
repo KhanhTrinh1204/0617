@@ -25,9 +25,11 @@ export default Characteristics;
 const Content = ({
 	title,
 	description,
+	featureTitle,
 }: {
 	title: string;
 	description: string | JSX.Element;
+	featureTitle?: string;
 }) => {
 	return (
 		<div className="montserrat-font">
@@ -47,7 +49,7 @@ const Content = ({
 					className="md:w-[500px] md:h-[400px] w-[380px] h-[360px]"
 				/>
 				<div className="font-medium w-[300px] md:w-[380px] translate-y-[-21em] md:translate-y-[-23em] translate-x-[3em] md:-translate-x-[-4em]">
-					<span className="dancing-font text-3xl">Bạn có biết ?</span>
+					<span className="dancing-font text-3xl">{featureTitle || "Bạn có biết ?"}</span>
 					<div className="md:text-[14px] text-xs mt-2">
 						{description}
 					</div>
@@ -72,7 +74,7 @@ const Feature = () => {
 const Feature1 = () => {
 	const { ref, visible } = useVisibleOnScroll();
 	return (
-		<div ref={ref}>
+		<div ref={ref} data-feature="feature1">
 			<div className="absolute mt-4 translate-x-[15em] md:translate-x-0">
 				<div className="md:block hidden translate-x-20">
 					<img
@@ -181,6 +183,7 @@ const Feature1 = () => {
 			>
 				<Content
 					title="Nông Dân"
+					featureTitle="Người nông dân"
 					description="Người nông dân ở Bắc Kạn chăm sóc vườn chuối tiêu xanh bắt đầu từ việc chọn giống khỏe, trồng đúng khoảng cách và bón phân chuồng hoai mục để cây phát triển tốt. Trong quá trình sinh trưởng, họ thường xuyên tưới nước, làm cỏ, vun gốc, tỉa mầm và chống đổ cho cây, đặc biệt trong mùa mưa bão. Để phòng sâu bệnh, họ ưu tiên biện pháp tự nhiên hoặc dùng thuốc sinh học. Khi cây ra hoa và buồng, người dân sẽ buộc buồng chuối, che nắng bằng lá hoặc bao để trái phát triển đều. Đến thời điểm chín, họ thu hoạch đúng kỹ thuật để giữ chất lượng chuối, phục vụ tiêu thụ trong nước hoặc xuất khẩu. Công việc đòi hỏi sự tỉ mỉ, kiên trì và gắn bó với đất đai quanh năm."
 				/>
 			</div>
@@ -192,7 +195,7 @@ const Feature2 = () => {
 	const { ref, visible } = useVisibleOnScroll();
 
 	return (
-		<div ref={ref}>
+		<div ref={ref} data-feature="feature2">
 			<div className="-translate-y-32 md:mt-16 mt-0">
 				<div className="translate-x-24 -translate-y-3 md:block hidden">
 					<img
@@ -301,6 +304,7 @@ Sau khi làm sạch, người sơ chế để chuối ráo nước, lau khô và
 					/> */}
 					<Content
 						title="Nhà Nông Học"
+						featureTitle="Sơ chế"
 						description={
 							<>
 								<p>
@@ -337,7 +341,7 @@ const Feature3 = () => {
 	const { ref, visible } = useVisibleOnScroll();
 
 	return (
-		<div ref={ref}>
+		<div ref={ref} data-feature="feature3">
 			<div className="-mt-[28em] md:-mt-[26em]">
 				<div className="translate-x-40 md:block hidden">
 					<img
@@ -440,6 +444,7 @@ const Feature3 = () => {
 				>
 					<Content
 						title="Nông Dân"
+						featureTitle="Khâu tinh chế"
 						description={
 							<>
 								<p>
@@ -470,7 +475,7 @@ const Feature4 = () => {
 	const { ref, visible } = useVisibleOnScroll();
 
 	return (
-		<div ref={ref}>
+		<div ref={ref} data-feature="feature4">
 			<div className="-mt-36 md:-mt-28">
 				<div className="translate-x-20 -translate-y-16 md:block hidden">
 					<img
@@ -567,6 +572,7 @@ const Feature4 = () => {
 				>
 					<Content
 						title="Nhà Nông Học"
+						featureTitle="Nhà sản xuất"
 						description="Người sản xuất tinh bột kháng từ chuối tiêu xanh ứng dụng công nghệ nano để tạo ra tinh bột ở kích thước siêu nhỏ, giúp tăng khả năng hấp thu và hiệu quả sinh học khi sử dụng.Sau khi chuối tiêu xanh được làm khô và xay mịn, bột chuối được đưa vào hệ thống nghiền siêu mịn hoặc đồng nhất hóa áp suất cao (high-pressure homogenizer) để tạo ra hạt tinh bột có kích thước nano (20–200 nm). Quá trình này yêu cầu kiểm soát chặt chẽ về tốc độ, áp suất và nhiệt độ để không phá vỡ cấu trúc hoạt tính của tinh bột kháng"
 					/>
 				</div>
@@ -579,7 +585,7 @@ const Feature5 = () => {
 	const { ref, visible } = useVisibleOnScroll();
 
 	return (
-		<div ref={ref}>
+		<div ref={ref} data-feature="feature5">
 			<div className="-mt-72 md:translate-y-[2em]">
 				<div className="translate-x-40 md:block hidden">
 					<img
@@ -683,6 +689,7 @@ const Feature5 = () => {
 				>
 					<Content
 						title="Nông Dân"
+						featureTitle="Đóng gói"
 						description={
 							<>
 								<p>
