@@ -128,13 +128,6 @@ const Feature1 = () => {
 					</svg>
 				</div>
 				<div className="relative top-2">
-					<div className="relative top-36 left-8 z-0 rounded-full bg-[#ffffff76] size-14 -rotate-2 cursor-pointer">
-						<FontAwesomeIcon
-							icon={faPlay}
-							size="xl"
-							className="absolute top-4 left-5"
-						/>
-					</div>
 					<picture>
 						<div className="-rotate-[10deg]">
 							<img
